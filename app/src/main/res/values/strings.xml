@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Controle de Veículos</string>
+    <string name="item">Item</string>
+    <string name="nomeCadastroPessoa">Digite seu nome</string>
+    <string name="cpfCadastroPessoa">000.000.000-00</string>
+    <string name="dataCadastroPessoa">DD/MM/AAAA</string>
+    <string name="descricaoCadastroTipoVeiculo">Carro, moto...</string>
+    <string name="anoCadastroVeiculo">Ex 2018</string>
+    <string name="precoCadastroVeiculo">R$25.000,00</string>
+    <string name="habilitacaoCadastroTipoVeiculo">Categoria tipo A, B...</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="listar">listas</string>
+    <string name="cadastrar_ve_culo">Cadastrar veículo</string>
+    <string name="cadastrar_pessoa">cadastrar pessoa</string>
+    <string name="cadastrar_tipo_ve_culo">cadastrar tipo veículo</string>
+    <string name="listar_veiculo">listar veiculo</string>
+    <string name="listar_pessoa">listar pessoa</string>
+    <string name="listar_tipo_veiculo">listar tipo veiculo</string>
+    <string name="excluir">excluir</string>
+    <string name="nome">Nome:</string>
+    <string name="data_de_nascimento">Data de nascimento</string>
+    <string name="cpf">CPF:</string>
+    <string name="descri_o">Descrição:</string>
+    <string name="habilita_o_necess_ria">Habilitação necessária:</string>
+    <string name="categoria">Categoria:</string>
+    <string name="ano_de_fabrica_o">Ano de fabricação:</string>
+    <string name="pre_o">Preço:</string>
+    <string name="propriet_rio">Proprietário:</string>
+</resources>
