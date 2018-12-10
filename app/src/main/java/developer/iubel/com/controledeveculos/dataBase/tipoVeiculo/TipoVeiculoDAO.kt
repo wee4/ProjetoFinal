@@ -2,6 +2,7 @@ package developer.iubel.com.controledeveculos.dataBase.tipoVeiculo
 
 import android.arch.lifecycle.LiveData
 import android.arch.persistence.room.Dao
+import android.arch.persistence.room.Delete
 import android.arch.persistence.room.Insert
 import android.arch.persistence.room.Query
 import developer.iubel.com.controledeveculos.dataBase.pessoa.Pessoa
@@ -14,6 +15,9 @@ interface TipoVeiculoDAO {
 
     @Query("DELETE FROM tipoVeiculoTable")
     fun deleteAll()
+
+    @Delete
+    fun delete(tipoVeiculo: TipoVeiculo)
 
     @Query("SELECT * FROM tipoVeiculoTable")
     fun getAll(): LiveData<List<TipoVeiculo>>

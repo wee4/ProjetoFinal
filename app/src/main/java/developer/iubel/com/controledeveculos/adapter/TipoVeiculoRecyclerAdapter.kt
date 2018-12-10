@@ -16,6 +16,7 @@ class TipoVeiculoRecyclerAdapter internal constructor(context: Context) : Recycl
 
     private val inflater : LayoutInflater = LayoutInflater.from(context)
     private var tiposVeiculos = emptyList<TipoVeiculo>()
+    var onItemClick: ((TipoVeiculo) -> Unit)? = null
 
     override fun onCreateViewHolder(holder: ViewGroup, position: Int): ViewHolder {
         val view = inflater.inflate(R.layout.item_view_tipo_veiculo, holder, false)

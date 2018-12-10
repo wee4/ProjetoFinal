@@ -11,4 +11,13 @@ class PessoaRepository(private val pessoaDAO: PessoaDAO) {
     fun insert(pessoa: Pessoa) {
         pessoaDAO.insert(pessoa)
     }
+
+    fun update(pessoa: Pessoa) {
+        pessoaDAO.update(pessoa)
+    }
+
+    fun delete(pessoa: Pessoa) {
+        pessoaDAO.delete(pessoa)
+    }
+
 }

@@ -37,6 +37,14 @@ class PessoaViewModel(application: Application): AndroidViewModel(application) {
         repository.insert(pessoa)
     }
 
+    fun update(pessoa: Pessoa) = scope.launch(Dispatchers.IO) {
+        repository.update(pessoa)
+    }
+
+    fun delete(pessoa: Pessoa) = scope.launch(Dispatchers.IO) {
+        repository.delete(pessoa)
+    }
+
     //limpar
     override fun onCleared() {
         super.onCleared()
