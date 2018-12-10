@@ -36,6 +36,14 @@ class VeiculoViewModel (application: Application): AndroidViewModel(application)
         repository.insert(veiculo)
     }
 
+    fun update(veiculo: Veiculo) = scope.launch(Dispatchers.IO) {
+        repository.update(veiculo)
+    }
+
+    fun delete(veiculo: Veiculo) = scope.launch(Dispatchers.IO) {
+        repository.delete(veiculo)
+    }
+
     //limpar
     override fun onCleared() {
         super.onCleared()

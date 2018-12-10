@@ -12,6 +12,7 @@ import developer.iubel.com.controledeveculos.R
 import developer.iubel.com.controledeveculos.dataBase.pessoa.Pessoa
 import kotlinx.android.synthetic.main.activity_cadastro_pessoa.*
 
+
 class CadastroPessoa : AppCompatActivity() {
 
     lateinit var pessoa: Pessoa
@@ -51,7 +52,7 @@ class CadastroPessoa : AppCompatActivity() {
     // ---- menu ----
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_salvar, menu)
+        menuInflater.inflate(R.menu.menu, menu)
         try{
             pessoa.let {
                 val menuItem = menu?.findItem(R.id.menu_deletar)
@@ -91,12 +92,14 @@ class CadastroPessoa : AppCompatActivity() {
             }
             replyIntent.putExtra(EXTRA_REPLY, pessoa)
             setResult(Activity.RESULT_OK, replyIntent)
+            Toast.makeText(this, "Registro salvo com Sucesso !", Toast.LENGTH_SHORT).show()
             finish()
             true
         }else if(item?.itemId == R.id.menu_deletar){
             val replyIntent = Intent()
             replyIntent.putExtra(EXTRA_DELETE, pessoa)
             setResult(Activity.RESULT_OK, replyIntent)
+            Toast.makeText(this, "Registro excluído com Sucesso !", Toast.LENGTH_SHORT).show()
             finish()
             true
         }

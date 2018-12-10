@@ -1,6 +1,7 @@
 package developer.iubel.com.controledeveculos.adapter
 
 import android.content.Context
+import android.support.v7.widget.CardView
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -34,6 +35,12 @@ class TipoVeiculoRecyclerAdapter internal constructor(context: Context) : Recycl
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val descricao : TextView = itemView.descricaoCardViewTipoVeiculo
         val habilitacao : TextView = itemView.habilitacaoCardViewTipoVeiculo
+        val cardView: CardView = itemView.cardTipoVeiculo
+        init {
+            itemView.setOnClickListener {
+                onItemClick?.invoke(tiposVeiculos[adapterPosition])
+            }
+        }
     }
 
     fun setTipoVeiculoList(tipoVeiculoList: List<TipoVeiculo>){

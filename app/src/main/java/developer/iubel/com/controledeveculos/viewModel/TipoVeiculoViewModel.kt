@@ -38,6 +38,14 @@ class TipoVeiculoViewModel(application: Application): AndroidViewModel(applicati
         repository.insert(tipoVeiculo)
     }
 
+    fun update(tipoVeiculo: TipoVeiculo) = scope.launch(Dispatchers.IO) {
+        repository.update(tipoVeiculo)
+    }
+
+    fun delete(tipoVeiculo: TipoVeiculo) = scope.launch(Dispatchers.IO) {
+        repository.delete(tipoVeiculo)
+    }
+
     //limpar
     override fun onCleared() {
         super.onCleared()

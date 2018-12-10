@@ -1,45 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="90dp">
 
     <android.support.v7.widget.CardView
-        android:layout_width="368dp"
-        android:layout_height="140dp"
+        android:id="@+id/cardTipoVeiculo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/abc"
+        app:cardElevation="24dp"
+        app:cardUseCompatPadding="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
             android:background="@drawable/abc"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/descricaoCardViewTipoVeiculo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/habilitacaoCardViewTipoVeiculo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-
-            <Button
-                android:id="@+id/btnExcluirCardViewTipoVeiculo"
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/background_button"
-                android:text="@string/excluir" />
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </android.support.constraint.ConstraintLayout>

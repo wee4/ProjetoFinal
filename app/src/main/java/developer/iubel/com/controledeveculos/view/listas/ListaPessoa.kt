@@ -98,11 +98,6 @@ class ListaPessoa : AppCompatActivity() {
                 }
             }
         } else {
-            Toast.makeText(
-                    applicationContext,
-                   "Erro",
-                    Toast.LENGTH_LONG
-            ).show()
         }
     }
 }

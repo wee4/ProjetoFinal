@@ -13,6 +13,10 @@ class TipoVeiculoRepository(private val tipoVeiculoDAO: TipoVeiculoDAO) {
         tipoVeiculoDAO.insert(tipoVeiculo)
     }
 
+    fun update(tipoVeiculo: TipoVeiculo) {
+        tipoVeiculoDAO.update(tipoVeiculo)
+    }
+
     fun delete(tipoVeiculo: TipoVeiculo) {
         tipoVeiculoDAO.delete(tipoVeiculo)
     }
